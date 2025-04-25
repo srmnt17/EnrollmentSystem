@@ -31,11 +31,7 @@ $result = $conn->query("
     </style>
 </head>
 <body>
-    <h2>Enrollment Report</h2>
-    <a href="admin.php">Back to Dashboard</a>
-
-    <button onclick="window.print()" class="btn-print">Print Report</button>
-    
+    <h2>Enrollment Report</h2>    
     <table>
         <tr>
             <th>ID</th>
@@ -56,5 +52,6 @@ $result = $conn->query("
         </tr>
         <?php endwhile; ?>
     </table>
+    <button onclick="window.print()" class="btn-print">Print Report</button>
 </body>
 </html>
